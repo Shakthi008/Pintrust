@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = 'stylesheet' type="text/css" href = 'styles.css' /> 
-    <title>contact</title>
+    <title>Login Pintrust</title>
     <style rel = 'stylesheet' type="text/css">  
         
         *{
@@ -140,8 +140,14 @@
             margin-top:20px; 
             letter-spacing:5px; 
         }
+
+        #forgot{
+            cursor:pointer; 
+        }
       
-    
+        a{
+            text-decoration:none; 
+        }
     
        </style>
 </head>
@@ -154,12 +160,19 @@
                 <h2 class = 'title'>Welcome to Pintrust</h2>
                 <input type="text" class = 'input username' placeholder = 'Username'>  
                 <input type="password" class="input password" placeholder = 'Password'> 
-                <div class="pwd"><button id = 'forget'>Forgot Password ?</button></div>
-                <a id = 'login' href = 'https://github.com/taradepan/pinterest'>LOG IN</a>
+                <div class="pwd"><button id = 'forgot'>Forgot Password ?</button></div>
+                <a id = 'login' href = 'pinterest/index.html'>LOG IN</a>
                 <h2>OR</h2>
-                <button class = 'fb'>Continue with Facebook</button>
+                <a class = 'fb' href = 'https://www.facebook.com'>Continue with Facebook</a>
             </div>
         </form>
     </div>
+
+    <script type = 'text/javascript' defer>
+        var forgot = document.getElementById('forgot'); 
+        forgot.onclick = ()=>{
+            alert("Think Harder"); 
+        }; 
+    </script> 
 </body>
 </html>
